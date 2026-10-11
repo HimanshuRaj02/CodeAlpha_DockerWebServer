@@ -1,53 +1,119 @@
+# Dockerized Web Server with Nginx
 
-# Dockerized Web Server — CodeAlpha Task 4
+A hands-on DevOps project that demonstrates how to build and run a static website inside a Docker container using Nginx.
 
-## Overview
-A responsive website served by Nginx inside a Docker container.
-This project demonstrates Docker image creation, container deployment,
-port mapping, logging, and basic container lifecycle management.
+## Project Overview
 
-## Technologies
-- HTML5
-- CSS3
+This project packages an HTML and CSS website into a Docker image and serves it through Nginx. It also includes a Docker health check to verify that the web server is responding correctly.
+
+## Project Screenshots
+
+### Homepage
+![Docker Web Server Homepage](screenshots/homepage.png)
+
+### Project Details and Footer
+![Project Details and Footer](screenshots/project-footer.png)
+
+## Architecture
+
+```mermaid
+flowchart LR
+    A[Web Browser] --> B[localhost:8080]
+    B --> C[Docker Container]
+    C --> D[Nginx Web Server]
+    D --> E[index.html]
+    D --> F[style.css]
+```
+
+## Features
+
+- Custom Docker image built using `nginx:alpine`
+- Static website served through Nginx
+- Host-to-container port mapping (`8080:80`)
+- Docker health check to monitor server availability
+- Container logs and status inspection
+- Responsive website built with HTML and CSS
+
+## Technologies Used
+
 - Docker
 - Nginx
-- Ubuntu on WSL
+- Linux (Ubuntu on WSL)
+- HTML5 and CSS3
+- Git and GitHub
 
 ## Project Structure
+
 ```text
 codealpha-docker-webserver/
 ├── Dockerfile
 ├── index.html
 ├── style.css
-└── README.md
+├── README.md
+└── screenshots/
+    ├── homepage.png
+    └── project-footer.png
 ```
 
-## Build the Docker Image
+## Run the Project Locally
+
+### 1. Build the Docker image
+
 ```bash
-sudo docker build -t codealpha-webserver:v1 .
+sudo docker build -t codealpha-webserver:v2 .
 ```
 
-## Run the Container
+### 2. Start the container
+
 ```bash
-sudo docker run -d --name codealpha-web -p 8080:80 codealpha-webserver:v1
+sudo docker run -d --name codealpha-web -p 8080:80 codealpha-webserver:v2
 ```
 
-Open http://localhost:8080 in your browser.
+### 3. Open the website
 
-## Container Management
+Visit [http://localhost:8080](http://localhost:8080) in your browser.
+
+### 4. Verify the container
+
 ```bash
 sudo docker ps
+sudo docker inspect --format='{{.State.Health.Status}}' codealpha-web
 sudo docker logs codealpha-web
-sudo docker stop codealpha-web
-sudo docker start codealpha-web
-sudo docker inspect codealpha-web
 ```
 
-## Learning Outcomes
-- Built a Docker image using a Dockerfile.
-- Served website files using Nginx.
-- Mapped a host port to a container port.
-- Practiced container lifecycle management and troubleshooting.
+The health status should become `healthy` after the health check succeeds.
 
-## Internship
-CodeAlpha — Task 4: Web Server Using Docker
+## Container Management
+
+Stop the container:
+
+```bash
+sudo docker stop codealpha-web
+```
+
+Start it again:
+
+```bash
+sudo docker start codealpha-web
+```
+
+Remove the container:
+
+```bash
+sudo docker rm -f codealpha-web
+```
+
+## What I Learned
+
+- Building Docker images from a Dockerfile
+- Serving static files with Nginx
+- Mapping host ports to container ports
+- Adding and checking Docker health checks
+- Inspecting logs and managing container lifecycle
+- Version-controlling project files with Git and GitHub
+
+## Author
+
+**Himanshu Raj**
+
+Created as a hands-on project for learning Docker and web server deployment as part of a DevOps internship task.
