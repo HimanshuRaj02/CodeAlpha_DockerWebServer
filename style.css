@@ -16,6 +16,7 @@ body {
     line-height: 1.6;
 }
 
+/* Header and Navigation */
 header {
     background: #fff;
     padding: 20px 8%;
@@ -48,12 +49,14 @@ nav a {
     color: #172033;
     text-decoration: none;
     font-weight: 600;
+    transition: color 0.2s;
 }
 
 nav a:hover {
     color: #1769ff;
 }
 
+/* Hero Section */
 .hero {
     padding: 90px 8%;
     color: white;
@@ -92,12 +95,14 @@ nav a:hover {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: background 0.2s;
 }
 
 .button:hover {
     background: #0759e8;
 }
 
+/* Feature Cards */
 .features {
     padding: 55px 8%;
     display: grid;
@@ -133,6 +138,7 @@ nav a:hover {
     color: #526079;
 }
 
+/* Project Section */
 .project {
     padding: 55px 8%;
     background: white;
@@ -165,6 +171,7 @@ nav a:hover {
     font-weight: bold;
 }
 
+/* Footer */
 footer {
     padding: 25px 8%;
     background: #09132f;
@@ -177,12 +184,19 @@ footer p + p {
     font-size: 14px;
 }
 
+footer strong {
+    color: #fa9160b5;
+    font-weight: 700;
+}
+
+/* Tablet */
 @media (max-width: 1000px) {
     .features {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
+/* Mobile */
 @media (max-width: 600px) {
     header {
         padding: 18px 6%;
