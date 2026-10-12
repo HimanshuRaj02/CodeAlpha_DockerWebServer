@@ -212,10 +212,9 @@ A controlled test was performed by temporarily renaming the homepage file inside
 
 ![Troubleshooting Terminal Output](screenshots/troubleshooting-issue-wsl.png)
 
-![Website Recovery Verification](https://raw.githubusercontent.com/HimanshuRaj02/CodeAlpha_DockerWebServer/main/screenshots/troubleshooting-issue-restore-web.png)
+![Website Recovery Verification](./screenshots/troubleshooting-issue-reastore-web.png)
 
-![Recovery Terminal Output](https://raw.githubusercontent.com/HimanshuRaj02/CodeAlpha_DockerWebServer/main/screenshots/troubleshooting-issue-restore-wsl.png)
-
+![Recovery Terminal Output](./screenshots/troubleshooting-issue-reastore-wsl.png)
 ## What I Learned
 
 Through this project, I practised:
