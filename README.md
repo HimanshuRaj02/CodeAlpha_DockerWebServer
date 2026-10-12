@@ -212,11 +212,12 @@ A controlled test was performed by temporarily renaming the homepage file inside
 
 ![Troubleshooting Terminal Output](screenshots/troubleshooting-issue-wsl.png)
 
-**Recovery — Browser Verification**
+
+### Recovery — Browser Verification
 
 ![Website Recovery Verification](screenshots/troubleshooting-issue-restore-web.png)
 
-**Recovery — Terminal Verification**
+### Recovery — Terminal Verification
 
 ![Recovery Terminal Output](screenshots/troubleshooting-issue-restore-wsl.png)
 
