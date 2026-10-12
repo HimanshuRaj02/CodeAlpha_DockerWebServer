@@ -238,10 +238,8 @@ Through this project, I practised:
 
 This project was developed as part of my **CodeAlpha DevOps Internship** to gain hands-on experience with Docker containerization, Nginx web server deployment, container management, and basic troubleshooting.
 
-## Author
+## 👤 Author
 
-**Himanshu Raj**
+Himanshu Raj
 
-GitHub: [HimanshuRaj02](https://github.com/HimanshuRaj02)
-
-Project Repository: [CodeAlpha_DockerWebServer](https://github.com/HimanshuRaj02/CodeAlpha_DockerWebServer)
+LinkedIn Post: [Dockerized Web Server with Nginx | CodeAlpha DevOps Internship](https://lnkd.in/p/gp9AcPis)
