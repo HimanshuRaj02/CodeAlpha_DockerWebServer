@@ -200,9 +200,6 @@ Container logs were inspected to review Nginx startup messages and HTTP request 
 
 ![Docker Container Logs](screenshots/container-logs.png)
 
-### 4. Troubleshooting and Recovery
-
-A controlled test was performed by temporarily renaming the homepage file inside the running container. The website response was checked, the original file was restored, and recovery was verified.
 
 ### 4. Troubleshooting and Recovery
 
