@@ -204,15 +204,23 @@ Container logs were inspected to review Nginx startup messages and HTTP request 
 
 A controlled test was performed by temporarily renaming the homepage file inside the running container. The website response was checked, the original file was restored, and recovery was verified.
 
+### 4. Troubleshooting and Recovery
+
+A controlled troubleshooting test was performed by temporarily renaming the homepage file inside the running container. The website response was checked, the original file was restored, and recovery was verified.
+
 **Troubleshooting — Browser Response**
 
-![Website Troubleshooting Response](screenshots/troubleshooting-issue-web.png)
+![Website Troubleshooting Response](./screenshots/troubleshooting-issue-web.png)
 
 **Troubleshooting — Terminal Output**
 
-![Troubleshooting Terminal Output](screenshots/troubleshooting-issue-wsl.png)
+![Troubleshooting Terminal Output](./screenshots/troubleshooting-issue-wsl.png)
+
+**Website Recovery Verification**
 
 ![Website Recovery Verification](./screenshots/troubleshooting-issue-reastore-web.png)
+
+**Recovery Terminal Output**
 
 ![Recovery Terminal Output](./screenshots/troubleshooting-issue-reastore-wsl.png)
 ## What I Learned
